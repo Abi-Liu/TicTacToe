@@ -11,15 +11,15 @@
 /* LAYOUT
 /*******************************************/
 section{
-  width: 60%;
+  width: 300px;
   display: flex;
   flex-wrap: wrap;
-  height: 60%;
+  height: 300px;
   
 }
-.board{
-  width: 20%;
-  height: 20%;
+.square{
+  width: 100px;
+  height: 100px;
   border: 2px solid black;
 }
 
