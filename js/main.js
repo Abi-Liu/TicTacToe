@@ -31,7 +31,11 @@ function changePlayer() {
         player = 'X'
     }
 }
+<<<<<<< HEAD
 
 
 let theGameBegin = new Board()
 console.log('hi')
+=======
+console.log('hi')
+>>>>>>> 86c5f14 (commit)
