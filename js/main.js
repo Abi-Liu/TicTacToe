@@ -43,6 +43,7 @@
 
 // let theGameBegin = new Board
 let count = 0
+let won = false
 const squares = document.querySelectorAll('.square')
     squares.forEach((square) => {
        square.addEventListener("click", updateSquare);
@@ -107,11 +108,16 @@ function checkWin(){
 
     ) {
       console.log(`${player} wins!`);
+      won = true
+      count = 9
+      isFull(count)
     }
 }
 
 function isFull(count){
-    if(count === 9){
-        alert("Draw!")
+    if(count === 9 && won){
+        alert(`Player ${player} won!`)
+    } else if (count === 9 && !won) {
+        alert('Draw!')
     }
 }
