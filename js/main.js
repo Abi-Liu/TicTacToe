@@ -1,44 +1,44 @@
-const squares = document.querySelectorAll('.square')
+// const squares = document.querySelectorAll('.square')
 
-class Board{
-    constructor(){
+// class Board{
+//     constructor(){
         
-    }
-    initialize(){
-        squares.forEach((square) => {
-          square.addEventListener("click", placeLetter());
-        });
-    }
+//     }
+//     initialize(){
+//         squares.forEach((square) => {
+//           square.addEventListener("click", placeLetter());
+//         });
+//     }
 
-    placeLetter(letter){
+//     placeLetter(letter){
         
-    }
-}
-
-class Player{
-    constructor(letter){
-        this._letter = letter
-    }
-    get letter(){
-        return this._letter
-    }
-}
-
-// function placeLetter () {
-    
-//     console.log("square")
+//     }
 // }
 
-let player = "X";
+// class Player{
+//     constructor(letter){
+//         this._letter = letter
+//     }
+//     get letter(){
+//         return this._letter
+//     }
+// }
 
-function changePlayer() {
-    if(player == 'X') {
-        player = 'O'
-    } else {
-        player = 'X'
-    }
-}
+// // function placeLetter () {
+    
+// //     console.log("square")
+// // }
 
-console.log('hi')
+// let player = "X";
 
-let theGameBegin = new Board
+// function changePlayer() {
+//     if(player == 'X') {
+//         player = 'O'
+//     } else {
+//         player = 'X'
+//     }
+// }
+
+// console.log('hi')
+
+// let theGameBegin = new Board
