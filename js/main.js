@@ -34,4 +34,7 @@ function changePlayer() {
         player = 'X'
     }
 }
+
 console.log('hi')
+
+let theGameBegin = new Board
