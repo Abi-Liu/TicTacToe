@@ -22,7 +22,7 @@ class Player{
 
 function placeLetter () {
     
-    // console.log(this)
+    console.log("square")
 }
 
 let player = "X";
