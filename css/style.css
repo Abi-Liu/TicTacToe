@@ -10,6 +10,16 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
+section{
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.board{
+  width: 20%;
+  border: 2px solid black;
+}
 
 
 
