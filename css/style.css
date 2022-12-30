@@ -14,10 +14,12 @@ section{
   width: 60%;
   display: flex;
   flex-wrap: wrap;
+  height: 60%;
   
 }
 .board{
   width: 20%;
+  height: 20%;
   border: 2px solid black;
 }
 
