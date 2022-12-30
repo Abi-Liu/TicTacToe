@@ -18,6 +18,10 @@ class Player{
     }
 }
 
+function placeLetter () {
+    console.log('hi')
+}
+
 let player = "X";
 
 function changePlayer() {
@@ -27,4 +31,7 @@ function changePlayer() {
         player = 'X'
     }
 }
+
+
+let theGameBegin = new Board()
 console.log('hi')
