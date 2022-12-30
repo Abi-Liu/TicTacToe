@@ -1,10 +1,11 @@
 const squares = document.querySelectorAll('.square')
+squares.forEach(square => {
+    square.addEventListener('click', placeLetter)
+})
 
 class Board{
     constructor(){
-        squares.forEach(square => {
-            square.addEventListener('click', placeLetter)
-        })
+        
     }
 
 }
@@ -18,10 +19,6 @@ class Player{
     }
 }
 
-function placeLetter () {
-    console.log('hi')
-}
-
 let player = "X";
 
 function changePlayer() {
@@ -31,11 +28,4 @@ function changePlayer() {
         player = 'X'
     }
 }
-<<<<<<< HEAD
-
-
-let theGameBegin = new Board()
 console.log('hi')
-=======
-console.log('hi')
->>>>>>> 86c5f14 (commit)
