@@ -42,7 +42,7 @@
 // console.log('hi')
 
 // let theGameBegin = new Board
-
+let count = 0
 const squares = document.querySelectorAll('.square')
     squares.forEach((square) => {
        square.addEventListener("click", updateSquare);
@@ -57,8 +57,9 @@ function updateSquare() {
         this.value = player
         this.innerHTML = player;
         changePlayer();
+        count++
     }
-    
+    isFull(count)
     
 }
 
@@ -67,5 +68,15 @@ function changePlayer() {
         player = 'O'
     } else {
         player = 'X'
+    }
+}
+
+function checkWin(){
+
+}
+
+function isFull(count){
+    if(count === 9){
+        alert("Draw!")
     }
 }
