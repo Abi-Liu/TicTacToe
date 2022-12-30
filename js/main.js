@@ -43,10 +43,14 @@
 
 // let theGameBegin = new Board
 
+const squares = document.querySelectorAll('.square')
+    squares.forEach((square) => {
+       square.addEventListener("click", updateSquare);
+    });
 
 let player = "X"
 
-document.getElementById("one").addEventListener('click', updateSquare)
+// document.getElementById("one").addEventListener('click', updateSquare)
 
 function updateSquare() {
     this.innerHTML = player
