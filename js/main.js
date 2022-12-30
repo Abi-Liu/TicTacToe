@@ -5,9 +5,16 @@ squares.forEach(square => {
 
 class Board{
     constructor(){
-        squares.forEach(square => {
-            square.addEventListener('click', placeLetter())
-        })
+        
+    }
+    initialize(){
+        squares.forEach((square) => {
+          square.addEventListener("click", placeLetter());
+        });
+    }
+
+    placeLetter(letter){
+        
     }
 }
 
