@@ -72,10 +72,41 @@ function changePlayer() {
 }
 
 function checkWin(){
-    if(document.getElementById("one").innerHTML == player && 
-        document.getElementById("two").innerHTML == player && 
-        document.getElementById("three").innerHTML == player) {
-        console.log(`${player} wins!`)
+    if (
+      (document.getElementById("one").innerHTML == player &&
+        document.getElementById("two").innerHTML == player &&
+        document.getElementById("three").innerHTML == player) ||
+
+      (document.getElementById("four").innerHTML == player &&
+        document.getElementById("five").innerHTML == player &&
+        document.getElementById("six").innerHTML == player) ||
+
+      (document.getElementById("seven").innerHTML == player &&
+        document.getElementById("eight").innerHTML == player &&
+        document.getElementById("nine").innerHTML == player) ||
+
+      (document.getElementById("one").innerHTML == player &&
+        document.getElementById("four").innerHTML == player &&
+        document.getElementById("seven").innerHTML == player) ||
+
+      (document.getElementById("two").innerHTML == player &&
+        document.getElementById("five").innerHTML == player &&
+        document.getElementById("eight").innerHTML == player) ||
+
+      (document.getElementById("three").innerHTML == player &&
+        document.getElementById("six").innerHTML == player &&
+        document.getElementById("nine").innerHTML == player) ||
+
+        document.getElementById("one").innerHTML == player && 
+        document.getElementById("five").innerHTML == player && 
+        document.getElementById("nine").innerHTML == player ||
+
+        document.getElementById("three").innerHTML == player && 
+        document.getElementById("five").innerHTML == player && 
+        document.getElementById("seven").innerHTML == player
+
+    ) {
+      console.log(`${player} wins!`);
     }
 }
 
