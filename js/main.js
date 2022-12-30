@@ -53,9 +53,7 @@ let player = "X"
 // document.getElementById("one").addEventListener('click', updateSquare)
 
 function updateSquare() {
-    console.log(this.value)
     if(!this.value){
-        console.log(this.value)
         this.value = player
         this.innerHTML = player;
     }
