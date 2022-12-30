@@ -56,7 +56,8 @@ function updateSquare() {
     console.log(this.value)
     if(!this.value){
         console.log(this.value)
-        this.value = player;
+        this.value = player
+        this.innerHTML = player;
     }
     
     changePlayer()
