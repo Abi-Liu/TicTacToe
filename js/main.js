@@ -56,11 +56,11 @@ function updateSquare() {
     if(!this.value){
         this.value = player
         this.innerHTML = player;
+        checkWin()
         changePlayer();
         count++
     }
-    isFull(count)
-    
+    isFull(count)   
 }
 
 function changePlayer() {
@@ -72,7 +72,11 @@ function changePlayer() {
 }
 
 function checkWin(){
-
+    if(document.getElementById("one").innerHTML == player && 
+        document.getElementById("two").innerHTML == player && 
+        document.getElementById("three").innerHTML == player) {
+        console.log(`${player} wins!`)
+    }
 }
 
 function isFull(count){
