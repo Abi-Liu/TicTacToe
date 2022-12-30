@@ -42,3 +42,21 @@
 // console.log('hi')
 
 // let theGameBegin = new Board
+
+
+let player = "X"
+
+document.getElementById("one").addEventListener('click', updateSquare)
+
+function updateSquare() {
+    this.innerHTML = player
+    changePlayer()
+}
+
+function changePlayer() {
+    if(player == 'X') {
+        player = 'O'
+    } else {
+        player = 'X'
+    }
+}
